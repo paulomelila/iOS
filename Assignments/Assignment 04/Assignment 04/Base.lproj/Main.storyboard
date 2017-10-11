@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="upV-qr-5sJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Front Door-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Front Door" id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment_04" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idt-oL-v0g">
+                                <rect key="frame" x="149" y="593" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Coat Room"/>
+                                <connections>
+                                    <segue destination="lBv-t7-5Jb" kind="show" id="fqa-tx-HEx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_door" translatesAutoresizingMaskIntoConstraints="NO" id="ngU-qg-oSJ">
+                                <rect key="frame" x="0.0" y="141" width="375" height="385"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Front Door" id="VFO-tY-pCf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4018" y="1585"/>
+        </scene>
+        <!--Library-->
+        <scene sceneID="gcC-t5-B9v">
+            <objects>
+                <viewController title="Library" id="M72-si-E4u" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jTF-Ag-VIz"/>
+                        <viewControllerLayoutGuide type="bottom" id="bqW-xz-TRm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KIG-QM-7vz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="library" translatesAutoresizingMaskIntoConstraints="NO" id="maD-Vf-hLz">
+                                <rect key="frame" x="0.0" y="223" width="375" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UjS-3H-77a">
+                                <rect key="frame" x="130" y="534" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Secret Passage"/>
+                                <connections>
+                                    <segue destination="Xlm-cx-QCr" kind="show" id="oCe-QZ-0z3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Library" id="Ah3-tX-MRR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHd-2d-1zB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4855.1999999999998" y="3161.4692653673164"/>
+        </scene>
+        <!--Secret Passage-->
+        <scene sceneID="vuv-Iv-rYS">
+            <objects>
+                <viewController title="Secret Passage" id="Xlm-cx-QCr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IDg-6D-qCi"/>
+                        <viewControllerLayoutGuide type="bottom" id="mG0-It-Hja"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3ve-5g-2Gh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="secret_passage" translatesAutoresizingMaskIntoConstraints="NO" id="TDj-tp-7DX">
+                                <rect key="frame" x="0.0" y="233" width="377" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pn-an-RHg">
+                                <rect key="frame" x="144" y="535" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Laboratory"/>
+                                <connections>
+                                    <segue destination="v3A-ZY-uDr" kind="show" id="Tbt-Mf-FEy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHs-zd-NrE">
+                                <rect key="frame" x="246" y="535" width="113" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mysterious Lake"/>
+                                <connections>
+                                    <segue destination="yCj-i2-M9x" kind="show" id="GUs-X3-16q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6Z-Ou-kkd">
+                                <rect key="frame" x="16" y="524" width="66" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dungeon"/>
+                                <connections>
+                                    <segue destination="ubL-Pd-feS" kind="show" id="RKK-e5-692"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Secret Passage" id="45e-9N-dtI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KLu-gg-gTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4855.1999999999998" y="3867.6161919040483"/>
+        </scene>
+        <!--Dungeon-->
+        <scene sceneID="YEX-eZ-ec9">
+            <objects>
+                <viewController title="Dungeon" id="ubL-Pd-feS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9lZ-gr-P5J"/>
+                        <viewControllerLayoutGuide type="bottom" id="i0r-rE-kdt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="56a-sI-Ci9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dungeon" translatesAutoresizingMaskIntoConstraints="NO" id="lkk-P5-UPk">
+                                <rect key="frame" x="-2" y="233" width="377" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dungeon" id="HpD-UH-R3P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Lp-N3-HJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5572" y="4629.5352323838088"/>
+        </scene>
+        <!--Laboratory-->
+        <scene sceneID="jab-Iw-jep">
+            <objects>
+                <viewController title="Laboratory" id="v3A-ZY-uDr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n6j-JM-HOo"/>
+                        <viewControllerLayoutGuide type="bottom" id="XTa-cD-1z7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hZL-VN-WOW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="labratory" translatesAutoresizingMaskIntoConstraints="NO" id="E4Q-8X-CYq">
+                                <rect key="frame" x="0.0" y="231" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epD-a7-jc3">
+                                <rect key="frame" x="148" y="534" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Generator"/>
+                                <connections>
+                                    <segue destination="Ehr-zC-esS" kind="show" id="g0h-wz-KjS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Laboratory" id="PEB-ud-7yn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XiA-bL-0bt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4855.1999999999998" y="4629.5352323838088"/>
+        </scene>
+        <!--Generator-->
+        <scene sceneID="28x-xO-wLq">
+            <objects>
+                <viewController title="Generator" id="Ehr-zC-esS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IbY-J4-0E6"/>
+                        <viewControllerLayoutGuide type="bottom" id="URP-jc-PxQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7nA-6x-hNZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="generator" translatesAutoresizingMaskIntoConstraints="NO" id="yBX-ZG-oRV">
+                                <rect key="frame" x="-2" y="233" width="377" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Generator" id="tQT-RI-eRd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABP-Do-q8R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4855.1999999999998" y="5338.3808095952027"/>
+        </scene>
+        <!--Cursed Chalice-->
+        <scene sceneID="DLz-tf-MRW">
+            <objects>
+                <viewController title="Cursed Chalice" id="QzO-ir-piC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6cs-Xq-22O"/>
+                        <viewControllerLayoutGuide type="bottom" id="EOv-Qf-g3f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Zj-xW-mWa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cursed_chalice" translatesAutoresizingMaskIntoConstraints="NO" id="VXf-2c-wI5">
+                                <rect key="frame" x="-3" y="233" width="378" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cursed Chalice" id="64J-e1-uzg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6a3-O3-dBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4138.3999999999996" y="5337.4812593703155"/>
+        </scene>
+        <!--Mysterious Lake-->
+        <scene sceneID="QB9-rw-qcw">
+            <objects>
+                <viewController title="Mysterious Lake" id="yCj-i2-M9x" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Wm-HI-avq"/>
+                        <viewControllerLayoutGuide type="bottom" id="yUZ-hw-bFV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eMr-nn-enh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mysterious_lake" translatesAutoresizingMaskIntoConstraints="NO" id="Mzp-Bx-Ugt">
+                                <rect key="frame" x="0.0" y="233" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYB-SQ-h4v">
+                                <rect key="frame" x="128" y="534" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cursed Chalice"/>
+                                <connections>
+                                    <segue destination="QzO-ir-piC" kind="show" id="YoN-SG-3y4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mysterious Lake" id="6jt-xW-zZa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cXF-26-8LO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4138.3999999999996" y="4629.5352323838088"/>
+        </scene>
+        <!--Back Porch-->
+        <scene sceneID="drj-0W-G5k">
+            <objects>
+                <viewController title="Back Porch" id="Y19-k5-a3E" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9ZV-ay-mgR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hd0-Af-o6w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ezJ-9F-7cd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back_porch" translatesAutoresizingMaskIntoConstraints="NO" id="iu5-Rf-Bsm">
+                                <rect key="frame" x="-2" y="233" width="378" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Back Porch" id="sKj-lZ-yaX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iQU-Ms-hdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3231.1999999999998" y="4668.2158920539732"/>
+        </scene>
+        <!--Kitchen-->
+        <scene sceneID="g5S-08-MQV">
+            <objects>
+                <viewController title="Kitchen" id="pzp-Cz-hIo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IWs-wo-nN4"/>
+                        <viewControllerLayoutGuide type="bottom" id="qB8-pB-JTt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8fu-Hg-36M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kitchen" translatesAutoresizingMaskIntoConstraints="NO" id="iMF-6c-Z6Z">
+                                <rect key="frame" x="0.0" y="234" width="375" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4n5-Nw-k3j">
+                                <rect key="frame" x="142" y="532" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back Porch"/>
+                                <connections>
+                                    <segue destination="Y19-k5-a3E" kind="show" id="LxJ-OC-BSW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Kitchen" id="94a-qe-pdH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PvP-Jw-jNA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4018.4000000000001" y="3867.6161919040483"/>
+        </scene>
+        <!--Bedroom-->
+        <scene sceneID="vnR-8w-2ns">
+            <objects>
+                <viewController title="Bedroom" id="1ws-Fk-F4M" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1r4-Fa-epD"/>
+                        <viewControllerLayoutGuide type="bottom" id="s9z-aC-PN3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HbI-ra-8cN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bedroom" translatesAutoresizingMaskIntoConstraints="NO" id="gJR-Qw-gXC">
+                                <rect key="frame" x="0.0" y="233" width="377" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bedroom" id="BUt-Sg-c1O"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bK9-Bu-RNU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3231.1999999999998" y="3929.6851574212897"/>
+        </scene>
+        <!--Bathroom-->
+        <scene sceneID="1aP-QN-aan">
+            <objects>
+                <viewController title="Bathroom" id="FGa-zh-bhe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gjv-UE-ap3"/>
+                        <viewControllerLayoutGuide type="bottom" id="eOI-LK-Cqn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lOa-c1-3dm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bathroom" translatesAutoresizingMaskIntoConstraints="NO" id="dcf-PL-HFm">
+                                <rect key="frame" x="-2" y="233" width="377" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bathroom" id="fj1-9p-o2B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sYI-VB-z4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2383.1999999999998" y="3929.6851574212897"/>
+        </scene>
+        <!--Dining Room-->
+        <scene sceneID="Fb4-r0-WCC">
+            <objects>
+                <viewController title="Dining Room" id="olT-8P-zAT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eZz-ny-mOi"/>
+                        <viewControllerLayoutGuide type="bottom" id="LAs-Jp-0le"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="49g-Vc-EJO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dining_room" translatesAutoresizingMaskIntoConstraints="NO" id="yUm-iN-Rbb">
+                                <rect key="frame" x="0.0" y="234" width="375" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kG2-qh-h7c">
+                                <rect key="frame" x="154" y="527" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Kitchen"/>
+                                <connections>
+                                    <segue destination="pzp-Cz-hIo" kind="show" id="dKL-rg-R5F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dining Room" id="Ab9-fV-G3W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJ6-SH-d3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4018.4000000000001" y="3160.5697151424292"/>
+        </scene>
+        <!--Stairs Up-->
+        <scene sceneID="kHN-pJ-Fes">
+            <objects>
+                <viewController title="Stairs Up" id="deg-ik-6kq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dXr-8n-qYL"/>
+                        <viewControllerLayoutGuide type="bottom" id="pxj-aE-qtf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0e4-KM-uDt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stairs_up" translatesAutoresizingMaskIntoConstraints="NO" id="cHW-VK-2GC">
+                                <rect key="frame" x="0.0" y="234" width="375" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnq-CL-FSp">
+                                <rect key="frame" x="234" y="535" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bathroom"/>
+                                <connections>
+                                    <segue destination="FGa-zh-bhe" kind="show" id="rOP-uQ-gAO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGL-9l-x3M">
+                                <rect key="frame" x="66" y="535" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bedroom"/>
+                                <connections>
+                                    <segue destination="1ws-Fk-F4M" kind="show" id="sUK-Jc-Ao4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Stairs Up" id="4rd-fR-GED"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nof-Qv-WSQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3191.1999999999998" y="3160.5697151424292"/>
+        </scene>
+        <!--Coat Room-->
+        <scene sceneID="NlC-j9-PaW">
+            <objects>
+                <viewController title="Coat Room" id="lBv-t7-5Jb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PeP-Hz-gaN"/>
+                        <viewControllerLayoutGuide type="bottom" id="pwI-Gv-g4t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XjQ-2R-xld">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coat_room" translatesAutoresizingMaskIntoConstraints="NO" id="0Zh-p7-tRn">
+                                <rect key="frame" x="0.0" y="233" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gg-cb-sYu">
+                                <rect key="frame" x="16" y="557" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Library"/>
+                                <connections>
+                                    <segue destination="M72-si-E4u" kind="show" id="ktO-eT-Igd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lot-Ze-J24">
+                                <rect key="frame" x="138" y="557" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dining Room"/>
+                                <connections>
+                                    <segue destination="olT-8P-zAT" kind="show" id="Azx-EJ-CQN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nn6-xg-cCz">
+                                <rect key="frame" x="291" y="557" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stairs Up"/>
+                                <connections>
+                                    <segue destination="deg-ik-6kq" kind="show" id="hs0-Os-Wpc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Coat Room" id="UgL-VP-hUG"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfA-DB-i7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4018" y="2394"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hRH-pc-ofq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="upV-qr-5sJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="thQ-Or-7ZA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0IO-N9-pfi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Avk-dH-JWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4018" y="815"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_porch" width="1024" height="1024"/>
+        <image name="bathroom" width="1024" height="1024"/>
+        <image name="bedroom" width="1024" height="1024"/>
+        <image name="coat_room" width="1024" height="1024"/>
+        <image name="cursed_chalice" width="1024" height="1024"/>
+        <image name="dining_room" width="1024" height="1024"/>
+        <image name="dungeon" width="1024" height="1024"/>
+        <image name="front_door" width="1024" height="1024"/>
+        <image name="generator" width="1024" height="1024"/>
+        <image name="kitchen" width="1024" height="1001"/>
+        <image name="labratory" width="1024" height="1024"/>
+        <image name="library" width="1024" height="1001"/>
+        <image name="mysterious_lake" width="1024" height="1024"/>
+        <image name="secret_passage" width="1024" height="1001"/>
+        <image name="stairs_up" width="1024" height="1001"/>
+    </resources>
+</document>
