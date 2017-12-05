@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuotePro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lfE-X7-Mpn">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="u2K-5q-M4y" appends="YES" id="hUN-pv-bHd"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap text for new quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jig-dX-iw5">
+                                <rect key="frame" x="66" y="93.5" width="534" height="38.5"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="0.0"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4A9-85-fDL" appends="YES" id="mz7-AW-rk4"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLa-ON-84v">
+                                <rect key="frame" x="307.5" y="271" width="52" height="20.5"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.5" height="0.0"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="oCo-6b-rcZ" appends="YES" id="qC5-Ko-dOy"/>
+                                </connections>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lfE-X7-Mpn" secondAttribute="trailing" id="ABj-pM-XiX"/>
+                            <constraint firstItem="YLa-ON-84v" firstAttribute="centerX" secondItem="lfE-X7-Mpn" secondAttribute="centerX" id="HwT-Jf-h6p"/>
+                            <constraint firstItem="Jig-dX-iw5" firstAttribute="width" secondItem="lfE-X7-Mpn" secondAttribute="width" multiplier="0.8" id="MXt-1Z-9TO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lfE-X7-Mpn" secondAttribute="bottom" id="WDl-Xa-6NB"/>
+                            <constraint firstItem="Jig-dX-iw5" firstAttribute="centerY" secondItem="lfE-X7-Mpn" secondAttribute="centerY" multiplier="0.6" id="aLv-05-6Kv"/>
+                            <constraint firstItem="Jig-dX-iw5" firstAttribute="centerX" secondItem="lfE-X7-Mpn" secondAttribute="centerX" id="gVX-1R-sCd"/>
+                            <constraint firstItem="lfE-X7-Mpn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="lUh-QS-aYV"/>
+                            <constraint firstItem="YLa-ON-84v" firstAttribute="centerY" secondItem="lfE-X7-Mpn" secondAttribute="centerY" multiplier="1.5" id="s4b-rn-clT"/>
+                            <constraint firstItem="lfE-X7-Mpn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vZD-eD-oTM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authorLabel" destination="YLa-ON-84v" id="Vsc-Lq-NhE"/>
+                        <outlet property="imageView" destination="lfE-X7-Mpn" id="VMl-E8-iEm"/>
+                        <outlet property="quoteLabel" destination="Jig-dX-iw5" id="KxF-6p-SZ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="u2K-5q-M4y">
+                    <connections>
+                        <action selector="imageTapped:" destination="BYZ-38-t0r" id="Ma8-xo-YU6"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="4A9-85-fDL">
+                    <connections>
+                        <action selector="quoteTapped:" destination="BYZ-38-t0r" id="2P9-Id-4VI"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="oCo-6b-rcZ">
+                    <connections>
+                        <action selector="quoteTapped:" destination="BYZ-38-t0r" id="X1A-WB-IKG"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-744" y="-23"/>
+        </scene>
+    </scenes>
+</document>
